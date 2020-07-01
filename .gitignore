@@ -2,7 +2,8 @@
 ### Gradle template
 .gradle
 /build/
-
+/.idea/
+/gradle/
 # Ignore Gradle GUI config
 gradle-app.setting
 
@@ -15,3 +16,21 @@ gradle-app.setting
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
 
+app/build/generated/ap_generated_sources/
+app/build/generated/res/
+app/build/intermediates/data_binding_layout_info_type_merge/
+app/build/intermediates/dex/debug/mergeLibDexDebug/
+app/build/intermediates/duplicate_classes_check/
+app/build/intermediates/external_libs_dex_archive/
+app/build/intermediates/incremental/mergeDebugResources/merged.dir/
+app/build/intermediates/incremental/mergeDebugResources/stripped.dir/
+app/build/intermediates/incremental/processDebugResources/
+app/build/intermediates/merged_assets/
+app/build/intermediates/merged_jni_libs/
+app/build/intermediates/merged_native_libs/
+app/build/intermediates/merged_shaders/
+app/build/intermediates/mixed_scope_dex_archive/
+app/build/intermediates/sub_project_dex_archive/
+app/build/intermediates/validate_signing_config/
+app/build/tmp/
+app/libs/
