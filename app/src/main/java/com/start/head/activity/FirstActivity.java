@@ -1,18 +1,18 @@
-package com.start.head;
+package com.start.head.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.start.head.R;
 
 public class FirstActivity extends AppCompatActivity {
     private static final String TAG = "FirstActivity";

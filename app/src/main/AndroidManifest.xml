@@ -9,17 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ThirdActivity">
+        <activity android:name=".activity.FirstActivity"/>
+        <activity android:name=".activity.ThirdActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE"/>
-<!--                Activity supporting ACTION_VIEW is not set as BROWSABLE-->
-                <data android:scheme="http"/>
-<!--          指定http就可以和浏览器一样，能够响应打开网页的Intent了          />-->
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Activity supporting ACTION_VIEW is not set as BROWSABLE -->
+                <data android:scheme="http" />
+                <!-- 指定http就可以和浏览器一样，能够响应打开网页的Intent了          /> -->
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity">
+        <activity android:name=".activity.SecondActivity">
             <intent-filter>
                 <action android:name="com.start.head.ACTION_START" />
 
@@ -28,7 +30,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".FirstActivity"
+            android:name=".activity.ListViewTestActivity"
             android:label="This is FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

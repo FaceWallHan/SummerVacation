@@ -8,12 +8,20 @@
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\first_layout.xml"
     },
     {
+        "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_view_test_item_layout.xml.flat",
+        "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\list_view_test_item_layout.xml"
+    },
+    {
         "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
         "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\menu_main.xml.flat",
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_view_test_layout.xml.flat",
+        "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\list_view_test_layout.xml"
     },
     {
         "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
