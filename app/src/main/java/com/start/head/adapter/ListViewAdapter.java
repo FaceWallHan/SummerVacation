@@ -1,6 +1,7 @@
 package com.start.head.adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,9 +16,10 @@ import com.start.head.bean.Fruit;
 
 import java.util.List;
 
-public class FruitAdapter extends ArrayAdapter<Fruit> {
+public class ListViewAdapter extends ArrayAdapter<Fruit> {
+    private static final String TAG = "ListViewAdapter";
     private List<Fruit> list;
-    public FruitAdapter(@NonNull Context context, List<Fruit> list) {
+    public ListViewAdapter(@NonNull Context context, List<Fruit> list) {
         super(context, 0);
         this.list=list;
     }
@@ -40,6 +42,7 @@ public class FruitAdapter extends ArrayAdapter<Fruit> {
         }
         holder.fruit_id.setText(fruit.getTypeId()+"");
         holder.fruit_name.setText(fruit.getName());
+        Log.d(TAG, "getView: "+position);
         return view;
     }
 
@@ -47,7 +50,7 @@ public class FruitAdapter extends ArrayAdapter<Fruit> {
     public int getCount() {
         return list.size();
     }
-    private class ViewHolder{
+    class ViewHolder{
         TextView fruit_id;
         TextView fruit_name;
     }

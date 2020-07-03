@@ -20,6 +20,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.start.head.activity.ListViewTestActivity" />
         <activity android:name="com.start.head.activity.FirstActivity" />
         <activity android:name="com.start.head.activity.ThirdActivity" >
             <intent-filter>
@@ -41,7 +42,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.start.head.activity.ListViewTestActivity"
+            android:name="com.start.head.activity.RecyclerViewActivity"
             android:label="This is FirstActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
