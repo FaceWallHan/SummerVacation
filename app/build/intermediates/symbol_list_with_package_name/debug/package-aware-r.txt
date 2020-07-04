@@ -759,6 +759,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id button
 id buttonPanel
 id button_1
 id button_2
@@ -800,6 +801,7 @@ id invisible
 id italic
 id item_touch_helper_previous_elevation
 id left
+id left_fragment
 id line1
 id line3
 id listMode
@@ -827,6 +829,7 @@ id recycler_view
 id remove_item
 id right
 id right_icon
+id right_layout
 id right_side
 id screen
 id scrollIndicatorDown
@@ -924,8 +927,11 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout another_right_fragment_layout
 layout custom_dialog
 layout first_layout
+layout fragment_test_layout
+layout left_fragment_layout
 layout list_view_test_item_layout
 layout list_view_test_layout
 layout notification_action
@@ -935,6 +941,7 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout recycler_view_layout
+layout right_fragment_layout
 layout second_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
