@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.NewsContentActivity"></activity>
+        <activity android:name=".activity.FragmentNewsActivity"/>
+        <activity android:name=".activity.FragmentTestActivity" />
+        <activity android:name=".activity.NewsContentActivity" />
         <activity android:name=".activity.RecyclerViewActivity" />
         <activity android:name=".activity.ListViewTestActivity" />
         <activity android:name=".activity.FirstActivity" />
@@ -33,7 +35,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.FragmentTestActivity"
+            android:name=".activity.BroadcastActivity"
             android:label="This is FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
