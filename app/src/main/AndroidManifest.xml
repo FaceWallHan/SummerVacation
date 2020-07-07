@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.start.head">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +12,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.FragmentNewsActivity"/>
+        <activity android:name=".activity.BroadcastActivity"/>
+
+        <receiver
+            android:name=".broadcast.MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="100">
+<!--                100为有序广播的优先级-->
+                <action android:name="com.start.head.broadcast.MY_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".broadcast.BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- 接收开机广播 -->
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".activity.FragmentNewsActivity" />
         <activity android:name=".activity.FragmentTestActivity" />
         <activity android:name=".activity.NewsContentActivity" />
         <activity android:name=".activity.RecyclerViewActivity" />
@@ -35,7 +59,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.BroadcastActivity"
+            android:name=".activity.BroadcastStandardActivity"
             android:label="This is FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

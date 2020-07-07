@@ -9,6 +9,9 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="30" />
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -20,6 +23,28 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.start.head.activity.BroadcastActivity" />
+
+        <receiver
+            android:name="com.start.head.broadcast.MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter android:priority="100" >
+
+                <!-- 100为有序广播的优先级 -->
+                <action android:name="com.start.head.broadcast.MY_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.start.head.broadcast.BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- 接收开机广播 -->
+            </intent-filter>
+        </receiver>
+
         <activity android:name="com.start.head.activity.FragmentNewsActivity" />
         <activity android:name="com.start.head.activity.FragmentTestActivity" />
         <activity android:name="com.start.head.activity.NewsContentActivity" />
@@ -46,7 +71,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.start.head.activity.BroadcastActivity"
+            android:name="com.start.head.activity.BroadcastStandardActivity"
             android:label="This is FirstActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
