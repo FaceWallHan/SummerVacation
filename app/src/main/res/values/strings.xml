@@ -2,4 +2,5 @@
     <string name="app_name">SummerVacation</string>
     <string name="MyBroadcastReceiver">com.start.head.broadcast.MY_BROADCAST</string>
     <string name="LocalBroadcastReceiver">com.start.head.broadcast.LOCAL_BROADCAST</string>
+    <string name="login">com.start.head.broadcast.FORCE_OFFLINE</string>
 </resources>

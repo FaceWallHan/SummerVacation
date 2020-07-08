@@ -12,14 +12,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.BroadcastActivity"/>
+        <activity android:name=".activity.MainActivity"></activity>
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.BroadcastActivity" />
 
         <receiver
             android:name=".broadcast.MyBroadcastReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter android:priority="100">
-<!--                100为有序广播的优先级-->
+
+                <!-- 100为有序广播的优先级 -->
                 <action android:name="com.start.head.broadcast.MY_BROADCAST" />
             </intent-filter>
         </receiver>
