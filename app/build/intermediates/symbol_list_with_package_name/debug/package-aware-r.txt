@@ -695,6 +695,8 @@ drawable tooltip_frame_light
 id ALT
 id CTRL
 id FUNCTION
+id LitePal_bt
+id LitePal_list
 id META
 id SHIFT
 id SYM
@@ -731,6 +733,7 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id account
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -784,6 +787,7 @@ id edit_query
 id end
 id expand_activities_button
 id expanded_menu
+id force_offline
 id forever
 id fruit_id
 id fruit_name
@@ -807,6 +811,7 @@ id line3
 id listMode
 id list_item
 id list_view
+id login
 id message
 id middle
 id multiply
@@ -879,6 +884,7 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id text
 id text2
+id textPassword
 id textSpacerNoButtons
 id textSpacerNoTitle
 id time
@@ -935,6 +941,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_main
 layout another_right_fragment_layout
 layout broadcast_layout
 layout broadcast_standard_layout
@@ -945,6 +952,8 @@ layout fragment_test_layout
 layout left_fragment_layout
 layout list_view_test_item_layout
 layout list_view_test_layout
+layout litepal_layout
+layout login_layout
 layout news_content_frag_layout
 layout news_content_layout
 layout news_item_layout
@@ -996,6 +1005,7 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
+string login
 string search_menu_title
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat

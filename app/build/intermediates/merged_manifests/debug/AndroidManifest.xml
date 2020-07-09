@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
+        android:name="com.start.head.AppClient"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -22,6 +23,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.start.head.activity.MainActivity" />
+        <activity android:name="com.start.head.activity.BroadcastStandardActivity" />
         <activity android:name="com.start.head.activity.BroadcastActivity" />
 
         <receiver
@@ -69,8 +72,9 @@
                 <category android:name="com.start.head.MY_CATEGORY" />
             </intent-filter>
         </activity>
+        <activity android:name="com.start.head.activity.LoginActivity" />
         <activity
-            android:name="com.start.head.activity.BroadcastStandardActivity"
+            android:name="com.start.head.activity.LitePalActivity"
             android:label="This is FirstActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

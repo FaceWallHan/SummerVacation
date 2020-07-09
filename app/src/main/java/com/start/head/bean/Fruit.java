@@ -1,6 +1,8 @@
 package com.start.head.bean;
 
-public class Fruit {
+import org.litepal.crud.LitePalSupport;
+
+public class Fruit extends LitePalSupport {
     private int typeId;
     private String name;
 
@@ -23,5 +25,8 @@ public class Fruit {
     public Fruit(int typeId, String name) {
         this.typeId = typeId;
         this.name = name;
+    }
+
+    public Fruit() {
     }
 }
