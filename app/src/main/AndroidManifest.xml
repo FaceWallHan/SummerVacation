@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:name=".AppClient"
@@ -54,6 +55,7 @@
                 <!-- 指定http就可以和浏览器一样，能够响应打开网页的Intent了          /> -->
             </intent-filter>
         </activity>
+        <activity android:name=".activity.LitePalActivity"/>
         <activity android:name=".activity.SecondActivity">
             <intent-filter>
                 <action android:name="com.start.head.ACTION_START" />
@@ -64,7 +66,7 @@
         </activity>
         <activity android:name=".activity.LoginActivity"/>
         <activity
-            android:name=".activity.LitePalActivity"
+            android:name=".activity.PermissionActivity"
             android:label="This is FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

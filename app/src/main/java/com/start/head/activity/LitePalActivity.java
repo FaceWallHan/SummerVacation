@@ -20,8 +20,11 @@ import com.start.head.bean.Fruit;
 import org.litepal.LitePal;
 import org.litepal.crud.LitePalSupport;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
@@ -33,15 +36,6 @@ public class LitePalActivity extends AppCompatActivity {
     private List<Fruit>list;
     private ListView LitePal_list;
     private ListViewAdapter adapter;
-    private Handler handler=new Handler(new Handler.Callback() {
-        @Override
-        public boolean handleMessage(@NonNull Message message) {
-            //list= LitePal.findAll(Fruit.class);
-            adapter.notifyDataSetChanged();
-            Log.d(TAG, "handleMessage: ");
-            return false;
-        }
-    });
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,26 +49,38 @@ public class LitePalActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Random random=new Random();
                 insertSql(getTime(),random.nextInt());
-
-                    selectAll();
+                selectAll();
 
             }
         });
     }
     private void selectAll(){
         list.clear();
-        new Thread(){
+        list.addAll(LitePal.findAll(Fruit.class));
+        Collections.sort(list, new Comparator<Fruit>() {
             @Override
-            public void run() {
-                list= LitePal.findAll(Fruit.class);
-
-                super.run();
+            public int compare(Fruit fruit, Fruit t1) {
+                SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss",Locale.CHINA);
+                try {
+                    Date dt1=format.parse(fruit.getName());
+                    Date dt2=format.parse(t1.getName());
+                    if (dt1.getTime()>dt2.getTime()){
+                        return -1;//大的放前面--->降序
+                    }else {
+                        return 1;
+                    }
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+                return 0;
             }
-        }.start();
-
+        });
+        /**
+         *Iteration can be replaced with bulk 'Collection.addAll' call
+         * 可以用批量“ Collection.addAll”调用代替迭代
+         * */
+        adapter.notifyDataSetChanged();
         Log.d(TAG, "selectAll: "+LitePal.findAll(Fruit.class).size());
-        handler.sendEmptyMessageAtTime(0,50);
-
     }
     private boolean insertSql(String time,int id){
         Fruit fruit=new Fruit();

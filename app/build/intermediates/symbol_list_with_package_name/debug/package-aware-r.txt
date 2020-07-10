@@ -812,6 +812,7 @@ id listMode
 id list_item
 id list_view
 id login
+id make_call
 id message
 id middle
 id multiply
@@ -964,6 +965,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout permission_layout
 layout recycler_view_layout
 layout right_fragment_layout
 layout second_layout

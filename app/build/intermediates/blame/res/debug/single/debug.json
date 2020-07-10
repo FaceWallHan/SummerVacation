@@ -112,6 +112,10 @@
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\second_layout.xml"
     },
     {
+        "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\layout_permission_layout.xml.flat",
+        "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\permission_layout.xml"
+    },
+    {
         "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
