@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:name="com.start.head.AppClient"
@@ -25,6 +26,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.start.head.activity.PermissionActivity" />
         <activity android:name="com.start.head.activity.MainActivity" />
         <activity android:name="com.start.head.activity.BroadcastStandardActivity" />
         <activity android:name="com.start.head.activity.BroadcastActivity" />
@@ -77,7 +79,7 @@
         </activity>
         <activity android:name="com.start.head.activity.LoginActivity" />
         <activity
-            android:name="com.start.head.activity.PermissionActivity"
+            android:name="com.start.head.activity.ContactsActivity"
             android:label="This is FirstActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -773,6 +773,7 @@ id checkbox
 id checked
 id chronometer
 id collapseActionView
+id contacts_view
 id content
 id contentPanel
 id custom
@@ -946,6 +947,7 @@ layout activity_main
 layout another_right_fragment_layout
 layout broadcast_layout
 layout broadcast_standard_layout
+layout contacts_layout
 layout custom_dialog
 layout first_layout
 layout fragment_news_layout

@@ -4,7 +4,8 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
 
     <application
         android:name=".AppClient"
@@ -14,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".activity.PermissionActivity"/>
+        <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.BroadcastStandardActivity" />
         <activity android:name=".activity.BroadcastActivity" />
 
@@ -55,7 +57,7 @@
                 <!-- 指定http就可以和浏览器一样，能够响应打开网页的Intent了          /> -->
             </intent-filter>
         </activity>
-        <activity android:name=".activity.LitePalActivity"/>
+        <activity android:name=".activity.LitePalActivity" />
         <activity android:name=".activity.SecondActivity">
             <intent-filter>
                 <action android:name="com.start.head.ACTION_START" />
@@ -64,9 +66,9 @@
                 <category android:name="com.start.head.MY_CATEGORY" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.LoginActivity"/>
+        <activity android:name=".activity.LoginActivity" />
         <activity
-            android:name=".activity.PermissionActivity"
+            android:name=".activity.ContactsActivity"
             android:label="This is FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

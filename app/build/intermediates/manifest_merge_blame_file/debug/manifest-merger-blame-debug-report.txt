@@ -17,155 +17,161 @@
 12-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:6:5-81
 12-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:6:22-78
 13    <uses-permission android:name="android.permission.CALL_PHONE" />
-13-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:7:5-68
+13-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:7:5-69
 13-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:7:22-66
-14
-15    <application
-15-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:9:5-77:19
-16        android:name="com.start.head.AppClient"
-16-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:10:9-34
-17        android:allowBackup="true"
-17-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:11:9-35
-18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-18-->[androidx.core:core:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\03736cf4bc3669a69d502627b70a527e\core-1.1.0\AndroidManifest.xml:24:18-86
-19        android:debuggable="true"
-20        android:extractNativeLibs="false"
-21        android:icon="@mipmap/ic_launcher"
-21-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:12:9-43
-22        android:label="@string/app_name"
-22-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:13:9-41
-23        android:roundIcon="@mipmap/ic_launcher_round"
-23-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:14:9-54
-24        android:supportsRtl="true"
-24-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:15:9-35
-25        android:testOnly="true"
-26        android:theme="@style/AppTheme" >
-26-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:16:9-40
-27        <activity android:name="com.start.head.activity.MainActivity" />
-27-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:17:9-58
-27-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:17:19-56
-28        <activity android:name="com.start.head.activity.BroadcastStandardActivity" />
-28-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:18:9-72
-28-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:18:19-69
-29        <activity android:name="com.start.head.activity.BroadcastActivity" />
-29-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:19:9-64
-29-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:19:19-61
-30
-31        <receiver
-31-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:21:9-30:20
-32            android:name="com.start.head.broadcast.MyBroadcastReceiver"
-32-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:22:13-58
-33            android:enabled="true"
-33-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:23:13-35
-34            android:exported="true" >
-34-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:24:13-36
-35            <intent-filter android:priority="100" >
-35-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:25:13-29:29
-35-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:25:28-50
-36
-37                <!-- 100为有序广播的优先级 -->
-38                <action android:name="com.start.head.broadcast.MY_BROADCAST" />
-38-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:28:17-80
-38-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:28:25-77
-39            </intent-filter>
-40        </receiver>
-41        <receiver
-41-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:31:9-39:20
-42            android:name="com.start.head.broadcast.BootCompleteReceiver"
-42-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:32:13-59
-43            android:enabled="true"
-43-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:33:13-35
-44            android:exported="true" >
-44-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:34:13-36
-45            <intent-filter>
-45-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:35:13-38:29
-46                <action android:name="android.intent.action.BOOT_COMPLETED" />
-46-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:36:17-79
-46-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:36:25-76
-47                <!-- 接收开机广播 -->
-48            </intent-filter>
-49        </receiver>
-50
-51        <activity android:name="com.start.head.activity.FragmentNewsActivity" />
-51-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:41:9-67
-51-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:41:19-64
-52        <activity android:name="com.start.head.activity.FragmentTestActivity" />
-52-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:42:9-67
-52-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:42:19-64
-53        <activity android:name="com.start.head.activity.NewsContentActivity" />
-53-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:43:9-66
-53-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:43:19-63
-54        <activity android:name="com.start.head.activity.RecyclerViewActivity" />
+14    <uses-permission android:name="android.permission.READ_CONTACTS" />
+14-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:8:5-71
+14-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:8:22-69
+15
+16    <application
+16-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:10:5-79:19
+17        android:name="com.start.head.AppClient"
+17-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:11:9-34
+18        android:allowBackup="true"
+18-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:12:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\03736cf4bc3669a69d502627b70a527e\core-1.1.0\AndroidManifest.xml:24:18-86
+20        android:debuggable="true"
+21        android:extractNativeLibs="false"
+22        android:icon="@mipmap/ic_launcher"
+22-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:13:9-43
+23        android:label="@string/app_name"
+23-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:14:9-41
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:15:9-54
+25        android:supportsRtl="true"
+25-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:16:9-35
+26        android:testOnly="true"
+27        android:theme="@style/AppTheme" >
+27-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:17:9-40
+28        <activity android:name="com.start.head.activity.PermissionActivity" />
+28-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:18:9-64
+28-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:18:19-62
+29        <activity android:name="com.start.head.activity.MainActivity" />
+29-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:19:9-59
+29-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:19:19-56
+30        <activity android:name="com.start.head.activity.BroadcastStandardActivity" />
+30-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:20:9-72
+30-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:20:19-69
+31        <activity android:name="com.start.head.activity.BroadcastActivity" />
+31-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:21:9-64
+31-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:21:19-61
+32
+33        <receiver
+33-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:23:9-32:20
+34            android:name="com.start.head.broadcast.MyBroadcastReceiver"
+34-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:24:13-58
+35            android:enabled="true"
+35-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:25:13-35
+36            android:exported="true" >
+36-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:26:13-36
+37            <intent-filter android:priority="100" >
+37-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:27:13-31:29
+37-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:27:28-50
+38
+39                <!-- 100为有序广播的优先级 -->
+40                <action android:name="com.start.head.broadcast.MY_BROADCAST" />
+40-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:30:17-80
+40-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:30:25-77
+41            </intent-filter>
+42        </receiver>
+43        <receiver
+43-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:33:9-41:20
+44            android:name="com.start.head.broadcast.BootCompleteReceiver"
+44-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:34:13-59
+45            android:enabled="true"
+45-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:35:13-35
+46            android:exported="true" >
+46-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:36:13-36
+47            <intent-filter>
+47-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:37:13-40:29
+48                <action android:name="android.intent.action.BOOT_COMPLETED" />
+48-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:38:17-79
+48-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:38:25-76
+49                <!-- 接收开机广播 -->
+50            </intent-filter>
+51        </receiver>
+52
+53        <activity android:name="com.start.head.activity.FragmentNewsActivity" />
+53-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:43:9-67
+53-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:43:19-64
+54        <activity android:name="com.start.head.activity.FragmentTestActivity" />
 54-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:44:9-67
 54-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:44:19-64
-55        <activity android:name="com.start.head.activity.ListViewTestActivity" />
-55-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:45:9-67
-55-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:45:19-64
-56        <activity android:name="com.start.head.activity.FirstActivity" />
-56-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:46:9-60
-56-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:46:19-57
-57        <activity android:name="com.start.head.activity.ThirdActivity" >
-57-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:47:9-57:20
-57-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:47:19-57
-58            <intent-filter>
-58-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:48:13-56:29
-59                <action android:name="android.intent.action.VIEW" />
-59-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:49:17-69
-59-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:49:25-66
-60
-61                <category android:name="android.intent.category.DEFAULT" />
-61-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:51:17-76
-61-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:51:27-73
-62                <category android:name="android.intent.category.BROWSABLE" />
-62-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:52:17-78
-62-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:52:27-75
-63                <!-- Activity supporting ACTION_VIEW is not set as BROWSABLE -->
-64                <data android:scheme="http" />
-64-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:54:17-47
-64-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:54:23-44
-65                <!-- 指定http就可以和浏览器一样，能够响应打开网页的Intent了          /> -->
-66            </intent-filter>
-67        </activity>
-68        <activity android:name="com.start.head.activity.LitePalActivity" />
-68-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:58:9-61
-68-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:58:19-59
-69        <activity android:name="com.start.head.activity.SecondActivity" >
-69-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:59:9-66:20
-69-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:59:19-58
-70            <intent-filter>
-70-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:60:13-65:29
-71                <action android:name="com.start.head.ACTION_START" />
-71-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:61:17-70
-71-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:61:25-67
-72
-73                <category android:name="android.intent.category.DEFAULT" />
-73-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:51:17-76
-73-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:51:27-73
-74                <category android:name="com.start.head.MY_CATEGORY" />
-74-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:64:17-71
-74-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:64:27-68
-75            </intent-filter>
-76        </activity>
-77        <activity android:name="com.start.head.activity.LoginActivity" />
-77-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:67:9-59
-77-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:67:19-57
-78        <activity
-78-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:68:9-76:20
-79            android:name="com.start.head.activity.PermissionActivity"
-79-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:69:13-56
-80            android:label="This is FirstActivity" >
-80-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:70:13-50
-81            <intent-filter>
-81-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:71:13-75:29
-82                <action android:name="android.intent.action.MAIN" />
-82-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:72:17-69
-82-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:72:25-66
-83
-84                <category android:name="android.intent.category.LAUNCHER" />
-84-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:74:17-77
-84-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:74:27-74
-85            </intent-filter>
-86        </activity>
-87    </application>
-88
-89</manifest>
+55        <activity android:name="com.start.head.activity.NewsContentActivity" />
+55-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:45:9-66
+55-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:45:19-63
+56        <activity android:name="com.start.head.activity.RecyclerViewActivity" />
+56-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:46:9-67
+56-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:46:19-64
+57        <activity android:name="com.start.head.activity.ListViewTestActivity" />
+57-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:47:9-67
+57-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:47:19-64
+58        <activity android:name="com.start.head.activity.FirstActivity" />
+58-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:48:9-60
+58-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:48:19-57
+59        <activity android:name="com.start.head.activity.ThirdActivity" >
+59-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:49:9-59:20
+59-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:49:19-57
+60            <intent-filter>
+60-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:50:13-58:29
+61                <action android:name="android.intent.action.VIEW" />
+61-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:51:17-69
+61-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:51:25-66
+62
+63                <category android:name="android.intent.category.DEFAULT" />
+63-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:53:17-76
+63-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:53:27-73
+64                <category android:name="android.intent.category.BROWSABLE" />
+64-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:54:17-78
+64-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:54:27-75
+65                <!-- Activity supporting ACTION_VIEW is not set as BROWSABLE -->
+66                <data android:scheme="http" />
+66-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:56:17-47
+66-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:56:23-44
+67                <!-- 指定http就可以和浏览器一样，能够响应打开网页的Intent了          /> -->
+68            </intent-filter>
+69        </activity>
+70        <activity android:name="com.start.head.activity.LitePalActivity" />
+70-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:60:9-62
+70-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:60:19-59
+71        <activity android:name="com.start.head.activity.SecondActivity" >
+71-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:61:9-68:20
+71-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:61:19-58
+72            <intent-filter>
+72-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:62:13-67:29
+73                <action android:name="com.start.head.ACTION_START" />
+73-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:63:17-70
+73-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:63:25-67
+74
+75                <category android:name="android.intent.category.DEFAULT" />
+75-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:53:17-76
+75-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:53:27-73
+76                <category android:name="com.start.head.MY_CATEGORY" />
+76-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:66:17-71
+76-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:66:27-68
+77            </intent-filter>
+78        </activity>
+79        <activity android:name="com.start.head.activity.LoginActivity" />
+79-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:69:9-60
+79-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:69:19-57
+80        <activity
+80-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:70:9-78:20
+81            android:name="com.start.head.activity.ContactsActivity"
+81-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:71:13-54
+82            android:label="This is FirstActivity" >
+82-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:72:13-50
+83            <intent-filter>
+83-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:73:13-77:29
+84                <action android:name="android.intent.action.MAIN" />
+84-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:74:17-69
+84-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:74:25-66
+85
+86                <category android:name="android.intent.category.LAUNCHER" />
+86-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:76:17-77
+86-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:76:27-74
+87            </intent-filter>
+88        </activity>
+89    </application>
+90
+91</manifest>
