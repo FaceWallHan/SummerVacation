@@ -15,8 +15,9 @@ public class MyProvider extends ContentProvider {
     public static final int TABLE2_DIR=2;
     public static final int TABLE2_ITEM=3;
     private static UriMatcher uriMatcher;
+    private static String thisName="com.start.head.provider";
     static {
-        String thisName="com.start.head.provider";
+        //静态方法必须静态变量
         uriMatcher=new UriMatcher(UriMatcher.NO_MATCH);
         uriMatcher.addURI(thisName,"table1",TABLE1_DIR);
         uriMatcher.addURI(thisName,"table1/#",TABLE1_ITEM);
@@ -49,12 +50,31 @@ public class MyProvider extends ContentProvider {
     }
     /**
      *表示匹配任意长度的任意字符：*
-     *表示匹配任意长度的数字：*
+     *表示匹配任意长度的数字：#
      * */
     @Nullable
     @Override
     public String getType(@NonNull Uri uri) {
+        String head="vnd.android.cursor.";
+        String tail="/vnd"+thisName;
+        switch (uriMatcher.match(uri)){
+            case TABLE1_DIR:
+                return head+"dir/"+tail+"table1";
+            case TABLE1_ITEM:
+                return head+"item/"+tail+"table1";
+            case TABLE2_DIR:
+                return head+"dir/"+tail+"table2";
+            case TABLE2_ITEM:
+                return head+"item/"+tail+"table2";
+            default:
+                break;
+        }
         return null;
+        /**
+         * 必须以开头
+         * 如果内容URL以路径结尾，则后接android.cursor.dir/，如果内容URL以id结尾，则后接android.cursor.item/
+         * 最后接上vnd.<authority>.<path>
+         * */
     }
 
     @Nullable
