@@ -148,6 +148,10 @@
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\login_layout.xml"
     },
     {
+        "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\layout_provider_layout.xml.flat",
+        "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\provider_layout.xml"
+    },
+    {
         "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_fragment_news_layout.xml.flat",
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout-sw600dp\\fragment_news_layout.xml"
     },

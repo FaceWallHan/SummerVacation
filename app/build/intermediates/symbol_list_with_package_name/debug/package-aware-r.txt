@@ -754,6 +754,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_data
 id add_item
 id alertTitle
 id always
@@ -780,6 +781,7 @@ id custom
 id customPanel
 id decor_content_parent
 id default_activity_button
+id delete_data
 id dialog_button
 id dimensions
 id direct
@@ -837,6 +839,8 @@ id parentPanel
 id percent
 id progress_circular
 id progress_horizontal
+id provider_list
+id query_data
 id radio
 id recycler_view
 id remove_item
@@ -898,6 +902,7 @@ id topPanel
 id unchecked
 id uniform
 id up
+id update_data
 id useLogo
 id visibility_layout
 id withText
@@ -968,6 +973,7 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout permission_layout
+layout provider_layout
 layout recycler_view_layout
 layout right_fragment_layout
 layout second_layout

@@ -24,7 +24,7 @@
 14-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:8:22-69
 15
 16    <application
-16-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:10:5-79:19
+16-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:10:5-80:19
 17        android:name="com.start.head.AppClient"
 17-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:11:9-34
 18        android:allowBackup="true"
@@ -153,25 +153,28 @@
 77            </intent-filter>
 78        </activity>
 79        <activity android:name="com.start.head.activity.LoginActivity" />
-79-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:69:9-60
+79-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:69:9-59
 79-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:69:19-57
-80        <activity
-80-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:70:9-78:20
-81            android:name="com.start.head.activity.ContactsActivity"
-81-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:71:13-54
-82            android:label="This is FirstActivity" >
-82-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:72:13-50
-83            <intent-filter>
-83-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:73:13-77:29
-84                <action android:name="android.intent.action.MAIN" />
-84-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:74:17-69
-84-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:74:25-66
-85
-86                <category android:name="android.intent.category.LAUNCHER" />
-86-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:76:17-77
-86-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:76:27-74
-87            </intent-filter>
-88        </activity>
-89    </application>
-90
-91</manifest>
+80        <activity android:name="com.start.head.activity.ContactsActivity" />
+80-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:70:9-63
+80-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:70:19-60
+81        <activity
+81-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:71:9-79:20
+82            android:name="com.start.head.activity.ProviderActivity"
+82-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:72:13-54
+83            android:label="This is FirstActivity" >
+83-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:73:13-50
+84            <intent-filter>
+84-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:74:13-78:29
+85                <action android:name="android.intent.action.MAIN" />
+85-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:75:17-69
+85-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:75:25-66
+86
+87                <category android:name="android.intent.category.LAUNCHER" />
+87-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:77:17-77
+87-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:77:27-74
+88            </intent-filter>
+89        </activity>
+90    </application>
+91
+92</manifest>
