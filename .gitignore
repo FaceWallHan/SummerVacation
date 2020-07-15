@@ -34,3 +34,5 @@ app/build/intermediates/sub_project_dex_archive/
 app/build/intermediates/validate_signing_config/
 app/build/tmp/
 app/libs/
+app/src/test/
+app/src/androidTest/

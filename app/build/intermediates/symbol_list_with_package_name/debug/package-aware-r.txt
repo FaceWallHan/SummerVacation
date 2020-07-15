@@ -864,6 +864,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id send_broadcast_standard
+id send_notice
 id shortcut
 id showCustom
 id showHome
@@ -968,6 +969,7 @@ layout news_item_layout
 layout news_title_frag_layout
 layout notification_action
 layout notification_action_tombstone
+layout notification_layout
 layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer

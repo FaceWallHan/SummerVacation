@@ -79,8 +79,9 @@
         </activity>
         <activity android:name="com.start.head.activity.LoginActivity" />
         <activity android:name="com.start.head.activity.ContactsActivity" />
+        <activity android:name="com.start.head.activity.ProviderActivity" />
         <activity
-            android:name="com.start.head.activity.ProviderActivity"
+            android:name="com.start.head.activity.NotificationActivity"
             android:label="This is FirstActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
