@@ -34,6 +34,7 @@ public class NotificationActivity extends AppCompatActivity implements View.OnCl
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.send_notice:
+                String text="了解如何构建通知，发送和同步数据以及使用语音操作获取官方android IDE和开发人员工具以构建适用于android的应用";
                 Intent intent=new Intent(Intent.ACTION_DIAL);
                 intent.setData(Uri.parse("tel:10086"));
                 PendingIntent pi=PendingIntent.getActivity(this,0,intent,0);
@@ -51,7 +52,11 @@ public class NotificationActivity extends AppCompatActivity implements View.OnCl
                             //下标为0的值表示手机静止的时长，下标为1的值手机振动的时长，下标为2的值又表示手机静止的时长，以此类推
                         .setLights(Color.GREEN,1000,1000)
                                                //亮起的时长，暗去的时长
-                        .setDefaults(NotificationCompat.DEFAULT_ALL)//默认效果，根据当前手机环境来觉得
+                        .setDefaults(NotificationCompat.DEFAULT_ALL)//默认效果，根据当前手机环境来决定
+                        .setStyle(new NotificationCompat.BigTextStyle().bigText(text))
+                        /**只能同时存在一个Style？？？*/
+                        .setStyle(new NotificationCompat.BigPictureStyle().bigPicture(BitmapFactory.decodeResource(getResources(),R.drawable.big_image)))
+                        .setPriority(NotificationCompat.PRIORITY_MAX)
                         .build();
                 manager.notify(1,notification);
                 break;

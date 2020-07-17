@@ -160,6 +160,10 @@
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout-sw600dp\\fragment_news_layout.xml"
     },
     {
+        "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\drawable_big_image.png.flat",
+        "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\drawable\\big_image.png"
+    },
+    {
         "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     }
