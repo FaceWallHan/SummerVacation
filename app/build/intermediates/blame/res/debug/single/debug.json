@@ -68,6 +68,10 @@
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\broadcast_standard_layout.xml"
     },
     {
+        "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\xml_file_paths.xml.flat",
+        "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\xml\\file_paths.xml"
+    },
+    {
         "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\layout_first_layout.xml.flat",
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\first_layout.xml"
     },
@@ -154,6 +158,10 @@
     {
         "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\layout_provider_layout.xml.flat",
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\provider_layout.xml"
+    },
+    {
+        "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\layout_camera_album_layout.xml.flat",
+        "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\camera_album_layout.xml"
     },
     {
         "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_fragment_news_layout.xml.flat",

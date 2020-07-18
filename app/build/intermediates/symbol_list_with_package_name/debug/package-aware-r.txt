@@ -773,6 +773,7 @@ id center_vertical
 id chains
 id checkbox
 id checked
+id choose_from_album
 id chronometer
 id collapseActionView
 id contacts_view
@@ -838,6 +839,7 @@ id packed
 id parent
 id parentPanel
 id percent
+id picture
 id progress_circular
 id progress_horizontal
 id provider_list
@@ -890,6 +892,7 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id take_photo
 id text
 id text2
 id textPassword
@@ -954,6 +957,7 @@ layout activity_main
 layout another_right_fragment_layout
 layout broadcast_layout
 layout broadcast_standard_layout
+layout camera_album_layout
 layout contacts_layout
 layout custom_dialog
 layout first_layout
@@ -1418,3 +1422,4 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml file_paths

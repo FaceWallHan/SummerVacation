@@ -13,6 +13,7 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name="com.start.head.AppClient"
@@ -51,6 +52,18 @@
             </intent-filter>
         </receiver>
 
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.start.head.activity"
+            android:grantUriPermissions="true" >
+
+            <!-- authorities与 FileProvider.getUriForFile的相同 -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+            <!-- android.support.FILE_PROVIDER_PATHS弹出can not find declaration to go to 居然能正常运行可还行 -->
+        </provider>
+
         <activity android:name="com.start.head.activity.FragmentNewsActivity" />
         <activity android:name="com.start.head.activity.FragmentTestActivity" />
         <activity android:name="com.start.head.activity.NewsContentActivity" />
@@ -80,8 +93,9 @@
         <activity android:name="com.start.head.activity.LoginActivity" />
         <activity android:name="com.start.head.activity.ContactsActivity" />
         <activity android:name="com.start.head.activity.ProviderActivity" />
+        <activity android:name="com.start.head.activity.NotificationActivity" />
         <activity
-            android:name="com.start.head.activity.NotificationActivity"
+            android:name="com.start.head.activity.CameraAlbumActivity"
             android:label="This is FirstActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
