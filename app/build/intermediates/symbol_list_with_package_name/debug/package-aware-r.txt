@@ -838,8 +838,10 @@ id on
 id packed
 id parent
 id parentPanel
+id pause_audio
 id percent
 id picture
+id play_audio
 id progress_circular
 id progress_horizontal
 id provider_list
@@ -881,6 +883,7 @@ id src_in
 id src_over
 id standard
 id start
+id stop_audio
 id submenuarrow
 id submit_area
 id tabMode
@@ -980,6 +983,7 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout permission_layout
+layout play_audio_layout
 layout provider_layout
 layout recycler_view_layout
 layout right_fragment_layout
@@ -992,6 +996,7 @@ layout third_layout
 menu main
 mipmap ic_launcher
 mipmap ic_launcher_round
+raw jack
 string LocalBroadcastReceiver
 string MyBroadcastReceiver
 string abc_action_bar_home_description

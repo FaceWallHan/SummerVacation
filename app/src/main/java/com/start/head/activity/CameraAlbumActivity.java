@@ -169,7 +169,7 @@ public class CameraAlbumActivity extends AppCompatActivity {
     }
     private String getImagePath(Uri uri,String selection){
         String path=null;
-        //通过uri和selection来获取真是的图片路径
+        //通过uri和selection来获取真实的图片路径
         Cursor cursor=getContentResolver().query(uri,null,selection,null,null);
         if (cursor!=null){
             if (cursor.moveToFirst()){

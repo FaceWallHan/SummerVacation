@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".AppClient"
@@ -17,6 +17,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.CameraAlbumActivity"/>
         <activity android:name=".activity.PermissionActivity" />
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.BroadcastStandardActivity" />
@@ -41,14 +42,19 @@
                 <!-- 接收开机广播 -->
             </intent-filter>
         </receiver>
+
         <provider
-            android:authorities="com.start.head.activity"
             android:name="androidx.core.content.FileProvider"
+            android:authorities="com.start.head.activity"
             android:grantUriPermissions="true">
-<!--            authorities与 FileProvider.getUriForFile的相同-->
-            <meta-data android:resource="@xml/file_paths" android:name="android.support.FILE_PROVIDER_PATHS" />
-<!--         android.support.FILE_PROVIDER_PATHS弹出can not find declaration to go to 居然能正常运行可还行   -->
+
+            <!-- authorities与 FileProvider.getUriForFile的相同 -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+            <!-- android.support.FILE_PROVIDER_PATHS弹出can not find declaration to go to 居然能正常运行可还行 -->
         </provider>
+
         <activity android:name=".activity.FragmentNewsActivity" />
         <activity android:name=".activity.FragmentTestActivity" />
         <activity android:name=".activity.NewsContentActivity" />
@@ -78,9 +84,9 @@
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.ContactsActivity" />
         <activity android:name=".activity.ProviderActivity" />
-        <activity android:name=".activity.NotificationActivity"/>
+        <activity android:name=".activity.NotificationActivity" />
         <activity
-            android:name=".activity.CameraAlbumActivity"
+            android:name=".activity.PlayAudioActivity"
             android:label="This is FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

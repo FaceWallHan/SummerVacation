@@ -27,6 +27,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.start.head.activity.CameraAlbumActivity" />
         <activity android:name="com.start.head.activity.PermissionActivity" />
         <activity android:name="com.start.head.activity.MainActivity" />
         <activity android:name="com.start.head.activity.BroadcastStandardActivity" />
@@ -95,7 +96,7 @@
         <activity android:name="com.start.head.activity.ProviderActivity" />
         <activity android:name="com.start.head.activity.NotificationActivity" />
         <activity
-            android:name="com.start.head.activity.CameraAlbumActivity"
+            android:name="com.start.head.activity.PlayAudioActivity"
             android:label="This is FirstActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
