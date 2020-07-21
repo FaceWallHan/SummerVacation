@@ -30,7 +30,7 @@
 16-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:10:22-78
 17
 18    <application
-18-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:12:5-97:19
+18-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:12:5-98:19
 19        android:name="com.start.head.AppClient"
 19-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:13:9-34
 20        android:allowBackup="true"
@@ -192,23 +192,26 @@
 97        <activity android:name="com.start.head.activity.NotificationActivity" />
 97-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:87:9-67
 97-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:87:19-64
-98        <activity
-98-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:88:9-96:20
-99            android:name="com.start.head.activity.PlayAudioActivity"
-99-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:89:13-55
-100            android:label="This is FirstActivity" >
-100-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:90:13-50
-101            <intent-filter>
-101-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:91:13-95:29
-102                <action android:name="android.intent.action.MAIN" />
-102-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:92:17-69
-102-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:92:25-66
-103
-104                <category android:name="android.intent.category.LAUNCHER" />
-104-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:94:17-77
-104-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:94:27-74
-105            </intent-filter>
-106        </activity>
-107    </application>
-108
-109</manifest>
+98        <activity android:name="com.start.head.activity.PlayAudioActivity" />
+98-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:88:9-64
+98-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:88:19-61
+99        <activity
+99-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:89:9-97:20
+100            android:name="com.start.head.activity.PlayVideoActivity"
+100-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:90:13-55
+101            android:label="This is FirstActivity" >
+101-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:91:13-50
+102            <intent-filter>
+102-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:92:13-96:29
+103                <action android:name="android.intent.action.MAIN" />
+103-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:93:17-69
+103-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:93:25-66
+104
+105                <category android:name="android.intent.category.LAUNCHER" />
+105-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:95:17-77
+105-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:95:27-74
+106            </intent-filter>
+107        </activity>
+108    </application>
+109
+110</manifest>

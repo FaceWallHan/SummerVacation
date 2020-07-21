@@ -912,6 +912,7 @@ id uniform
 id up
 id update_data
 id useLogo
+id video_view
 id visibility_layout
 id withText
 id wrap
@@ -984,6 +985,7 @@ layout notification_template_part_chronometer
 layout notification_template_part_time
 layout permission_layout
 layout play_audio_layout
+layout play_video_layout
 layout provider_layout
 layout recycler_view_layout
 layout right_fragment_layout
@@ -997,6 +999,7 @@ menu main
 mipmap ic_launcher
 mipmap ic_launcher_round
 raw jack
+raw life
 string LocalBroadcastReceiver
 string MyBroadcastReceiver
 string abc_action_bar_home_description

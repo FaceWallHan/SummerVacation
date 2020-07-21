@@ -85,8 +85,9 @@
         <activity android:name=".activity.ContactsActivity" />
         <activity android:name=".activity.ProviderActivity" />
         <activity android:name=".activity.NotificationActivity" />
+        <activity android:name=".activity.PlayAudioActivity" />
         <activity
-            android:name=".activity.PlayAudioActivity"
+            android:name=".activity.PlayVideoActivity"
             android:label="This is FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

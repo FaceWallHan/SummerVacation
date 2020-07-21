@@ -2,11 +2,13 @@ package com.start.head.activity;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
-import android.media.MediaPlayer;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.view.WindowManager;
+import android.widget.MediaController;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,10 +17,10 @@ import androidx.core.content.ContextCompat;
 
 import com.start.head.R;
 
-public class PlayVideoActivity extends AppCompatActivity implements View.OnClickListener {
-    private MediaPlayer mediaPlayer;
-    private Button play_video,pause_video,replay_video,stop_video;
+public class PlayVideoActivity extends AppCompatActivity {
     private final int AUDIO_PERMISSION=0;
+    private VideoView video_view;
+    private MediaController mediaController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,15 +29,8 @@ public class PlayVideoActivity extends AppCompatActivity implements View.OnClick
         inView();
     }
     private void inView(){
-        mediaPlayer=new MediaPlayer();
-        play_video=findViewById(R.id.play_video);
-        pause_video=findViewById(R.id.pause_video);
-        replay_video=findViewById(R.id.replay_video);
-        stop_video=findViewById(R.id.stop_video);
-        stop_video.setOnClickListener(this);
-        replay_video.setOnClickListener(this);
-        pause_video.setOnClickListener(this);
-        play_video.setOnClickListener(this);
+        video_view=findViewById(R.id.video_view);
+        mediaController=new MediaController(this);
         if (ContextCompat.checkSelfPermission(PlayVideoActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE)!= PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(PlayVideoActivity.this,new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},AUDIO_PERMISSION);
         }else {
@@ -43,30 +38,11 @@ public class PlayVideoActivity extends AppCompatActivity implements View.OnClick
         }
     }
     private void initVideoPath(){
-        mediaPlayer=MediaPlayer.create(PlayVideoActivity.this,R.raw.jack);
+        video_view.setMediaController(mediaController);
+        mediaController.setMediaPlayer(video_view);
+        video_view.setVideoURI(Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.life));
+        video_view.start();
     }
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.play_audio:
-                if (!mediaPlayer.isPlaying()){
-                    mediaPlayer.start();//开始播放
-                }
-                break;
-            case R.id.pause_audio:
-                if (mediaPlayer.isPlaying()){
-                    mediaPlayer.pause();//暂停播放
-                }
-                break;
-            case R.id.stop_audio:
-                if (mediaPlayer.isPlaying()){
-                    mediaPlayer.reset();//停止播放
-                    initVideoPath();
-                }
-                break;
-        }
-    }
-
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -85,9 +61,5 @@ public class PlayVideoActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (mediaPlayer!=null){
-            mediaPlayer.stop();
-            mediaPlayer.release();
-        }
     }
 }

@@ -95,8 +95,9 @@
         <activity android:name="com.start.head.activity.ContactsActivity" />
         <activity android:name="com.start.head.activity.ProviderActivity" />
         <activity android:name="com.start.head.activity.NotificationActivity" />
+        <activity android:name="com.start.head.activity.PlayAudioActivity" />
         <activity
-            android:name="com.start.head.activity.PlayAudioActivity"
+            android:name="com.start.head.activity.PlayVideoActivity"
             android:label="This is FirstActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
