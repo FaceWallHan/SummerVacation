@@ -849,6 +849,7 @@ id query_data
 id radio
 id recycler_view
 id remove_item
+id response_text
 id right
 id right_icon
 id right_layout
@@ -870,6 +871,7 @@ id search_voice_btn
 id select_dialog_listview
 id send_broadcast_standard
 id send_notice
+id send_request
 id shortcut
 id showCustom
 id showHome
@@ -914,6 +916,7 @@ id update_data
 id useLogo
 id video_view
 id visibility_layout
+id web_view
 id withText
 id wrap
 id wrap_content
@@ -967,6 +970,7 @@ layout custom_dialog
 layout first_layout
 layout fragment_news_layout
 layout fragment_test_layout
+layout httpurl_layout
 layout left_fragment_layout
 layout list_view_test_item_layout
 layout list_view_test_layout
@@ -995,6 +999,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout third_layout
+layout webview_layout
 menu main
 mipmap ic_launcher
 mipmap ic_launcher_round

@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:name=".AppClient"
@@ -86,8 +87,10 @@
         <activity android:name=".activity.ProviderActivity" />
         <activity android:name=".activity.NotificationActivity" />
         <activity android:name=".activity.PlayAudioActivity" />
+        <activity android:name=".activity.PlayVideoActivity" />
+        <activity android:name=".activity.WebViewActivity" />
         <activity
-            android:name=".activity.PlayVideoActivity"
+            android:name=".activity.HTTPUrlActivity"
             android:label="This is FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
