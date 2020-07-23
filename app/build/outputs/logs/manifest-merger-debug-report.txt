@@ -255,12 +255,12 @@ activity#com.start.head.activity.WebViewActivity
 ADDED from D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:91:9-62
 	android:name
 		ADDED from D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:91:19-59
-activity#com.start.head.activity.HTTPUrlActivity
+activity#com.start.head.activity.HTTPActivity
 ADDED from D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:92:9-100:20
 	android:label
 		ADDED from D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:94:13-50
 	android:name
-		ADDED from D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:93:13-53
+		ADDED from D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:93:13-50
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:95:13-99:29
 action#android.intent.action.MAIN

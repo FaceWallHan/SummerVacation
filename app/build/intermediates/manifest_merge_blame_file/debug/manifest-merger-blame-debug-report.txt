@@ -206,8 +206,8 @@
 101-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:91:19-59
 102        <activity
 102-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:92:9-100:20
-103            android:name="com.start.head.activity.HTTPUrlActivity"
-103-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:93:13-53
+103            android:name="com.start.head.activity.HTTPActivity"
+103-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:93:13-50
 104            android:label="This is FirstActivity" >
 104-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:94:13-50
 105            <intent-filter>

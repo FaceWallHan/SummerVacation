@@ -100,7 +100,7 @@
         <activity android:name="com.start.head.activity.PlayVideoActivity" />
         <activity android:name="com.start.head.activity.WebViewActivity" />
         <activity
-            android:name="com.start.head.activity.HTTPUrlActivity"
+            android:name="com.start.head.activity.HTTPActivity"
             android:label="This is FirstActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

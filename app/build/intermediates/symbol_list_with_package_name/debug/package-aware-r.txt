@@ -970,7 +970,7 @@ layout custom_dialog
 layout first_layout
 layout fragment_news_layout
 layout fragment_test_layout
-layout httpurl_layout
+layout http_layout
 layout left_fragment_layout
 layout list_view_test_item_layout
 layout list_view_test_layout

@@ -969,7 +969,7 @@ int layout custom_dialog 0x7f0a0022
 int layout first_layout 0x7f0a0023
 int layout fragment_news_layout 0x7f0a0024
 int layout fragment_test_layout 0x7f0a0025
-int layout httpurl_layout 0x7f0a0026
+int layout http_layout 0x7f0a0026
 int layout left_fragment_layout 0x7f0a0027
 int layout list_view_test_item_layout 0x7f0a0028
 int layout list_view_test_layout 0x7f0a0029
