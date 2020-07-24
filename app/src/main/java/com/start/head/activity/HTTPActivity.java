@@ -8,8 +8,18 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.start.head.R;
+import com.start.head.bean.App;
+import com.start.head.tools.ContentHandler;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+import org.xml.sax.XMLReader;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
@@ -21,6 +31,10 @@ import java.io.InputStreamReader;
 import java.io.StringReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.List;
+
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.SAXParserFactory;
 
 import okhttp3.FormBody;
 import okhttp3.OkHttpClient;
@@ -29,7 +43,7 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 public class HTTPActivity extends AppCompatActivity {
-    private String urlLocal="http://192.168.10.106:8080/test/get_data.xml";
+    private String urlLocalXml="http://192.168.10.106:8080/test/get_data.";
     private TextView response_text;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -55,18 +69,65 @@ public class HTTPActivity extends AppCompatActivity {
                             .add("password","123456")
                             .build();
                     Request request=new Request.Builder()
-                            .url(urlLocal)
+                            //.url(urlLocalXml+"xml")
+                            .url(urlLocalXml+"json")
                            // .post(requestBody)//POST请求
                             .build();
                     Response response=client.newCall(request).execute();
                     String responseData=response.body().string();//为什么toString()不可以
                     //showResponse(responseData);
-                    showResponse(parseXMLWithPull(responseData));
+                    //showResponse(parseXMLWithPull(responseData));
+                    //parseXMLWithSAX(responseData);
+                    /***/
+                    //showResponse(parseJSONWithJSONObject(responseData));
+                    showResponse(parseJSONWithGSON(responseData));
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
         }).start();
+    }
+    private String parseJSONWithGSON(String jsonData){
+        StringBuilder builder=new StringBuilder();
+        Gson gson=new Gson();
+        List<App> list=gson.fromJson(jsonData,new TypeToken<List<App>>(){}.getType());
+        for (App app : list) {
+            String id=app.getId();
+            String name=app.getName();
+            String version=app.getVersion();
+            builder.append("id:").append(id).append("name:").append(name).append("version:").append(version).append("\n");
+        }
+        return builder.toString();
+    }
+    private String parseJSONWithJSONObject(String jsonData){
+        StringBuilder builder=new StringBuilder();
+        try {
+            JSONArray jsonArray=new JSONArray(jsonData);
+            for (int i = 0; i < jsonArray.length(); i++) {
+                JSONObject jsonObject=jsonArray.getJSONObject(i);
+                String id=jsonObject.getString("id");
+                String name=jsonObject.getString("name");
+                String version=jsonObject.getString("version");
+                builder.append("id:").append(id).append("name:").append(name).append("version:").append(version).append("\n");
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return builder.toString();
+    }
+    private void parseXMLWithSAX(String xmlData){
+        try {
+            SAXParserFactory factory=SAXParserFactory.newInstance();
+            XMLReader xmlReader=factory.newSAXParser().getXMLReader();
+            ContentHandler handler=new ContentHandler();
+            //将ContentHandler的实例设置到中
+            xmlReader.setContentHandler(handler);
+            //开始执行解析
+            xmlReader.parse(new InputSource(new StringReader(xmlData)));
+            showResponse(handler.getStrSum());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
     private String parseXMLWithPull(String xmlData){
         StringBuilder builder=new StringBuilder();
