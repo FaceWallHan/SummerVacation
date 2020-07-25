@@ -12,6 +12,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.start.head.R;
 import com.start.head.bean.App;
+import com.start.head.net.HttpUtil;
 import com.start.head.tools.ContentHandler;
 
 import org.json.JSONArray;

@@ -16,6 +16,14 @@ public class MyProvider extends ContentProvider {
     public static final int TABLE2_ITEM=3;
     private static UriMatcher uriMatcher;
     private static String thisName="com.start.head.provider";
+    /**
+     *          static{}(静态代码块)与{}(非静态代码块)的异同点
+     * 相同点：都是在JVM加载类时且在构造方法执行之前执行，在类中都可以定义多个，
+     * 　　　　一般在代码块中对一些static变量进行赋值。
+     * 不同点：静态代码块在非静态代码块之前执行(静态代码块—>非静态代码块—>构造方法)。
+     * 　　　　静态代码块只在第一次new执行一次，之后不再执行，而非静态代码块在每new
+     * 　　　　一次就执行一次。非静态代码块可在普通方法中定义(不过作用不大)；而静态代码块不行。
+     * */
     static {
         //静态方法必须静态变量
         uriMatcher=new UriMatcher(UriMatcher.NO_MATCH);

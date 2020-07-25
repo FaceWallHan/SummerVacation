@@ -5,6 +5,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 import okhttp3.Callback;
 import okhttp3.OkHttpClient;
@@ -20,6 +23,7 @@ public class HttpUtil {
         client.newCall(request).enqueue(callback);
     }
     public static void sendHttpRequest(final String address, final HttpCallbackListener listener){
+        //既然都要new，那么加上static又有什么意义呢？
         new Thread(new Runnable() {
             @Override
             public void run() {

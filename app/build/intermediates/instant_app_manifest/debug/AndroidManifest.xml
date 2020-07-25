@@ -100,8 +100,16 @@
         <activity android:name="com.start.head.activity.PlayAudioActivity" />
         <activity android:name="com.start.head.activity.PlayVideoActivity" />
         <activity android:name="com.start.head.activity.WebViewActivity" />
+        <activity android:name="com.start.head.activity.HTTPActivity" />
+
+        <service
+            android:name="com.start.head.service.MyService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name="com.start.head.service.MyIntentService" />
+
         <activity
-            android:name="com.start.head.activity.HTTPActivity"
+            android:name="com.start.head.activity.ServiceTestActivity"
             android:label="This is FirstActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

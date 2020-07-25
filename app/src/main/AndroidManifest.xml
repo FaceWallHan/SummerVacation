@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.start.head">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -89,8 +90,11 @@
         <activity android:name=".activity.PlayAudioActivity" />
         <activity android:name=".activity.PlayVideoActivity" />
         <activity android:name=".activity.WebViewActivity" />
+        <activity android:name=".activity.HTTPActivity"/>
+        <service android:name=".service.MyService" android:exported="true" android:enabled="true"/>
+        <service android:name=".service.MyIntentService"/>
         <activity
-            android:name=".activity.HTTPActivity"
+            android:name=".activity.ServiceTestActivity"
             android:label="This is FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

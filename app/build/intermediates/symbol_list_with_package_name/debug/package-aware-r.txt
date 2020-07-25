@@ -762,6 +762,7 @@ id always
 id async
 id barrier
 id beginning
+id bind_service
 id blocking
 id bottom
 id button
@@ -885,7 +886,10 @@ id src_in
 id src_over
 id standard
 id start
+id start_intent_service
+id start_service
 id stop_audio
+id stop_service
 id submenuarrow
 id submit_area
 id tabMode
@@ -909,6 +913,7 @@ id titleDividerNoCustom
 id title_template
 id top
 id topPanel
+id unbind_service
 id unchecked
 id uniform
 id up
@@ -997,6 +1002,7 @@ layout second_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout service_test_layout
 layout support_simple_spinner_dropdown_item
 layout third_layout
 layout webview_layout
