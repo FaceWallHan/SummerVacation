@@ -11,7 +11,11 @@ import java.io.RandomAccessFile;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-
+/**
+ * Params:   执行AsyncTask时需要传入的参数
+ * Progress: 后台任务执行时，需要在界面上显示的当前进度
+ * Result:   任务执行完毕后需要返回的结果
+ * */
 public class DownloadTask extends AsyncTask<String,Integer,Integer> {
     public static final int TYPE_SUCCESS=0;
     public static final int TYPE_FAILED=1;
@@ -27,6 +31,9 @@ public class DownloadTask extends AsyncTask<String,Integer,Integer> {
 
     @Override
     protected Integer doInBackground(String... strings) {
+        /**
+         * 在后台执行具体的下载逻辑
+         * */
         InputStream is=null;
         RandomAccessFile savedFile=null;
         File file=null;
@@ -98,6 +105,9 @@ public class DownloadTask extends AsyncTask<String,Integer,Integer> {
 
     @Override
     protected void onProgressUpdate(Integer... values) {
+        /**
+         * 在界面上更新当前的下载进度
+         * */
         int progress=values[0];
         if (progress>lastProgress){
             listener.onProgress(progress);
@@ -107,6 +117,9 @@ public class DownloadTask extends AsyncTask<String,Integer,Integer> {
 
     @Override
     protected void onPostExecute(Integer integer) {
+        /**
+         * 通知最终的下载结果
+         * */
         switch (integer){
             case TYPE_SUCCESS:
                 listener.onSuccess();
