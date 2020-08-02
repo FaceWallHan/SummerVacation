@@ -770,6 +770,7 @@ id buttonPanel
 id button_1
 id button_2
 id button_3
+id cancel_download
 id center_vertical
 id chains
 id checkbox
@@ -840,6 +841,7 @@ id packed
 id parent
 id parentPanel
 id pause_audio
+id pause_download
 id percent
 id picture
 id play_audio
@@ -886,6 +888,7 @@ id src_in
 id src_over
 id standard
 id start
+id start_download
 id start_intent_service
 id start_service
 id stop_audio
@@ -972,6 +975,7 @@ layout broadcast_standard_layout
 layout camera_album_layout
 layout contacts_layout
 layout custom_dialog
+layout download_layout
 layout first_layout
 layout fragment_news_layout
 layout fragment_test_layout

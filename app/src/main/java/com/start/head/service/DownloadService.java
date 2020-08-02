@@ -6,6 +6,7 @@ import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Binder;
 import android.os.Environment;
 import android.os.IBinder;
@@ -69,7 +70,8 @@ public class DownloadService extends Service implements DownloadListener {
         return (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
     }
     private Notification getNotification(String title,int progress){
-        Intent intent=new Intent();
+        Intent intent=new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("http://www.by8857.com/"));
         PendingIntent pi=PendingIntent.getActivity(this,0,intent,0);
         NotificationCompat.Builder builder=new NotificationCompat.Builder(this)
                 .setSmallIcon(R.mipmap.ic_launcher)
@@ -83,7 +85,7 @@ public class DownloadService extends Service implements DownloadListener {
         }
         return builder.build();
     }
-    class DownloadBinder extends Binder{
+    public class DownloadBinder extends Binder{
         public void startDownload(String url){
             if (downloadTask==null){
                 downloadUrl=url;
