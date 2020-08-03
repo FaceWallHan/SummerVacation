@@ -102,6 +102,7 @@
         <activity android:name="com.start.head.activity.WebViewActivity" />
         <activity android:name="com.start.head.activity.HTTPActivity" />
         <activity android:name="com.start.head.activity.ServiceTestActivity" />
+        <activity android:name="com.start.head.activity.DownLoadActivity" />
 
         <service
             android:name="com.start.head.service.MyService"
@@ -114,7 +115,7 @@
             android:exported="true" />
 
         <activity
-            android:name="com.start.head.activity.DownLoadActivity"
+            android:name="com.start.head.activity.MaterialDesignActivity"
             android:label="This is FirstActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

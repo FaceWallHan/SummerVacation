@@ -28,28 +28,36 @@
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\recycler_view_layout.xml"
     },
     {
-        "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lv03.png.flat",
+        "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\drawable\\lv03.png"
     },
     {
         "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\layout_news_content_frag_layout.xml.flat",
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\news_content_frag_layout.xml"
     },
     {
+        "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
         "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\layout_news_title_frag_layout.xml.flat",
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\news_title_frag_layout.xml"
+    },
+    {
+        "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\menu_toobar.xml.flat",
+        "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\menu\\toobar.xml"
     },
     {
         "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\layout_third_layout.xml.flat",
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\third_layout.xml"
     },
     {
-        "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\layout_play_audio_layout.xml.flat",
-        "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\play_audio_layout.xml"
-    },
-    {
         "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\layout_play_audio_layout.xml.flat",
+        "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\play_audio_layout.xml"
     },
     {
         "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\xml_file_paths.xml.flat",
@@ -58,6 +66,10 @@
     {
         "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\layout_service_test_layout.xml.flat",
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\service_test_layout.xml"
+    },
+    {
+        "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\drawable_change.png.flat",
+        "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\drawable\\change.png"
     },
     {
         "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\menu_main.xml.flat",
@@ -104,8 +116,16 @@
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\fragment_news_layout.xml"
     },
     {
+        "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_design_layout.xml.flat",
+        "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\material_design_layout.xml"
+    },
+    {
         "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\layout_news_content_layout.xml.flat",
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\news_content_layout.xml"
+    },
+    {
+        "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lv01.png.flat",
+        "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\drawable\\lv01.png"
     },
     {
         "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
@@ -182,6 +202,10 @@
     {
         "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\layout_download_layout.xml.flat",
         "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\layout\\download_layout.xml"
+    },
+    {
+        "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lv02.png.flat",
+        "source": "D:\\Android-Project\\SummerVacation\\app\\src\\main\\res\\drawable\\lv02.png"
     },
     {
         "merged": "D:\\Android-Project\\SummerVacation\\app\\build\\intermediates\\res\\merged\\debug\\layout_broadcast_layout.xml.flat",

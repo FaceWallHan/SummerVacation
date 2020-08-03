@@ -434,6 +434,7 @@ color material_grey_600
 color material_grey_800
 color material_grey_850
 color material_grey_900
+color navigationBarColor
 color notification_action_color_filter
 color notification_icon_bg_color
 color primary_dark_material_dark
@@ -456,8 +457,10 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color textColorPrimary
 color tooltip_background_dark
 color tooltip_background_light
+color windowBackground
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -677,8 +680,12 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable change
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable lv01
+drawable lv02
+drawable lv03
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -760,6 +767,7 @@ id add_item
 id alertTitle
 id always
 id async
+id backup
 id barrier
 id beginning
 id bind_service
@@ -785,11 +793,13 @@ id custom
 id customPanel
 id decor_content_parent
 id default_activity_button
+id delete
 id delete_data
 id dialog_button
 id dimensions
 id direct
 id disableHome
+id draw_layout
 id edit_query
 id end
 id expand_activities_button
@@ -875,6 +885,7 @@ id select_dialog_listview
 id send_broadcast_standard
 id send_notice
 id send_request
+id setting
 id shortcut
 id showCustom
 id showHome
@@ -914,6 +925,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toolbar
 id top
 id topPanel
 id unbind_service
@@ -985,6 +997,7 @@ layout list_view_test_item_layout
 layout list_view_test_layout
 layout litepal_layout
 layout login_layout
+layout material_design_layout
 layout news_content_frag_layout
 layout news_content_layout
 layout news_item_layout
@@ -1011,6 +1024,7 @@ layout support_simple_spinner_dropdown_item
 layout third_layout
 layout webview_layout
 menu main
+menu toobar
 mipmap ic_launcher
 mipmap ic_launcher_round
 raw jack

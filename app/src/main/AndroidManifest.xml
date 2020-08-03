@@ -92,11 +92,12 @@
         <activity android:name=".activity.WebViewActivity" />
         <activity android:name=".activity.HTTPActivity"/>
         <activity android:name=".activity.ServiceTestActivity"/>
+        <activity android:name=".activity.DownLoadActivity"/>
         <service android:name=".service.MyService" android:exported="true" android:enabled="true"/>
         <service android:name=".service.MyIntentService"/>
         <service android:name=".service.DownloadService" android:enabled="true" android:exported="true"/>
         <activity
-            android:name=".activity.DownLoadActivity"
+            android:name=".activity.MaterialDesignActivity"
             android:label="This is FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
