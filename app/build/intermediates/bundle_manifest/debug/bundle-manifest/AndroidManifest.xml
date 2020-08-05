@@ -102,6 +102,9 @@
         <activity android:name="com.start.head.activity.HTTPActivity" />
         <activity android:name="com.start.head.activity.ServiceTestActivity" />
         <activity android:name="com.start.head.activity.DownLoadActivity" />
+        <activity
+            android:name="com.start.head.activity.FruitActivity"
+            android:theme="@style/FruitActivityTheme" />
 
         <service
             android:name="com.start.head.service.MyService"

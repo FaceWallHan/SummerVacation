@@ -1,5 +1,6 @@
 package com.start.head.activity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,6 +16,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
@@ -29,6 +31,11 @@ import java.util.Random;
 
 public class MaterialDesignActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
+    private Toolbar toolbar;
+    private NavigationView navView;
+    private FloatingActionButton fab;
+    private ActionBar actionBar;
+    private SwipeRefreshLayout swipe_refresh;
     private List<Fruit>list;
     private FruitAdapter adapter;
     private Fruit[] fruits={new Fruit(R.drawable.apple,"apple"),new Fruit(R.drawable.banana,"banana")
@@ -42,6 +49,7 @@ public class MaterialDesignActivity extends AppCompatActivity {
         setRecyclerView();
         initFruits();
         inView();
+        setListener();
     }
     private void initFruits(){
         list.clear();
@@ -60,13 +68,16 @@ public class MaterialDesignActivity extends AppCompatActivity {
         adapter=new FruitAdapter(list);
         recycler_design.setAdapter(adapter);
     }
-    private void inView(){
-        Toolbar toolbar=findViewById(R.id.toolbar);
-        NavigationView navView=findViewById(R.id.nav_view);
-        FloatingActionButton fab=findViewById(R.id.fab);
+    @SuppressLint("ResourceAsColor")
+    private void setListener(){
         setSupportActionBar(toolbar);
-        drawerLayout=findViewById(R.id.draw_layout);
-        ActionBar actionBar=getSupportActionBar();
+        swipe_refresh.setColorSchemeColors(R.color.colorPrimary);
+        swipe_refresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                refreshFruits();
+            }
+        });
         if (actionBar!=null){
             actionBar.setDisplayHomeAsUpEnabled(true);//显示导航按钮
             actionBar.setHomeAsUpIndicator(R.drawable.change);
@@ -92,7 +103,14 @@ public class MaterialDesignActivity extends AppCompatActivity {
 
             }
         });
-
+    }
+    private void inView(){
+        toolbar=findViewById(R.id.toolbar);
+        navView=findViewById(R.id.nav_view);
+        fab=findViewById(R.id.fab);
+        drawerLayout=findViewById(R.id.draw_layout);
+        actionBar=getSupportActionBar();
+        swipe_refresh=findViewById(R.id.swipe_refresh);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -117,5 +135,24 @@ public class MaterialDesignActivity extends AppCompatActivity {
                 break;
         }
         return true;
+    }
+    private void refreshFruits(){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        initFruits();
+                        swipe_refresh.setRefreshing(false);//刷新事件结束，隐藏刷新进度条
+                    }
+                });
+            }
+        }).start();
     }
 }

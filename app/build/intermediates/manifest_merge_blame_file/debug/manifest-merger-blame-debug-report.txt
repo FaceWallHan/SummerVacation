@@ -33,7 +33,7 @@
 17-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:12:22-64
 18
 19    <application
-19-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:14:5-108:19
+19-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:14:5-109:19
 20        android:name="com.start.head.AppClient"
 20-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:15:9-34
 21        android:allowBackup="true"
@@ -213,44 +213,50 @@
 104        <activity android:name="com.start.head.activity.DownLoadActivity" />
 104-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:95:9-62
 104-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:95:19-60
-105
-106        <service
-106-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:96:9-100
-107            android:name="com.start.head.service.MyService"
-107-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:96:18-51
-108            android:enabled="true"
-108-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:96:76-98
-109            android:exported="true" />
-109-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:96:52-75
-110        <service android:name="com.start.head.service.MyIntentService" />
-110-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:97:9-59
-110-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:97:18-57
-111        <service
-111-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:98:9-106
-112            android:name="com.start.head.service.DownloadService"
-112-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:98:18-57
-113            android:enabled="true"
-113-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:98:58-80
-114            android:exported="true" />
-114-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:98:81-104
-115
-116        <activity
-116-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:99:9-107:20
-117            android:name="com.start.head.activity.MaterialDesignActivity"
-117-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:100:13-60
-118            android:label="This is FirstActivity" >
-118-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:101:13-50
-119            <intent-filter>
-119-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:102:13-106:29
-120                <action android:name="android.intent.action.MAIN" />
-120-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:103:17-69
-120-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:103:25-66
-121
-122                <category android:name="android.intent.category.LAUNCHER" />
-122-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:105:17-77
-122-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:105:27-74
-123            </intent-filter>
-124        </activity>
-125    </application>
-126
-127</manifest>
+105        <activity
+105-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:96:9-101
+106            android:name="com.start.head.activity.FruitActivity"
+106-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:96:19-57
+107            android:theme="@style/FruitActivityTheme" />
+107-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:96:58-99
+108
+109        <service
+109-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:97:9-100
+110            android:name="com.start.head.service.MyService"
+110-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:97:18-51
+111            android:enabled="true"
+111-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:97:76-98
+112            android:exported="true" />
+112-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:97:52-75
+113        <service android:name="com.start.head.service.MyIntentService" />
+113-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:98:9-59
+113-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:98:18-57
+114        <service
+114-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:99:9-106
+115            android:name="com.start.head.service.DownloadService"
+115-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:99:18-57
+116            android:enabled="true"
+116-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:99:58-80
+117            android:exported="true" />
+117-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:99:81-104
+118
+119        <activity
+119-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:100:9-108:20
+120            android:name="com.start.head.activity.MaterialDesignActivity"
+120-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:101:13-60
+121            android:label="This is FirstActivity" >
+121-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:102:13-50
+122            <intent-filter>
+122-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:103:13-107:29
+123                <action android:name="android.intent.action.MAIN" />
+123-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:104:17-69
+123-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:104:25-66
+124
+125                <category android:name="android.intent.category.LAUNCHER" />
+125-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:106:17-77
+125-->D:\Android-Project\SummerVacation\app\src\main\AndroidManifest.xml:106:27-74
+126            </intent-filter>
+127        </activity>
+128    </application>
+129
+130</manifest>

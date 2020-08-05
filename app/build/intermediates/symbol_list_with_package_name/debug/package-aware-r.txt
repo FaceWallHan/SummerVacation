@@ -1155,6 +1155,7 @@ id add_item
 id alertTitle
 id all
 id always
+id appBar
 id async
 id auto
 id backup
@@ -1180,6 +1181,7 @@ id chronometer
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id collapsing_toolbar
 id contacts_view
 id container
 id content
@@ -1216,8 +1218,10 @@ id filled
 id fixed
 id force_offline
 id forever
+id fruit_content_text
 id fruit_id
 id fruit_image
+id fruit_image_view
 id fruit_name
 id ghost_view
 id glide_custom_view_target_tag
@@ -1351,6 +1355,7 @@ id stop_service
 id stretch
 id submenuarrow
 id submit_area
+id swipe_refresh
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -1480,6 +1485,7 @@ layout first_layout
 layout fragment_news_layout
 layout fragment_test_layout
 layout fruit_item_layout
+layout fruit_layout
 layout http_layout
 layout left_fragment_layout
 layout list_view_test_item_layout
@@ -1767,6 +1773,7 @@ style Base_Widget_MaterialComponents_TextInputLayout
 style CardView
 style CardView_Dark
 style CardView_Light
+style FruitActivityTheme
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents

@@ -1,6 +1,7 @@
 package com.start.head.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.start.head.R;
+import com.start.head.activity.FruitActivity;
 import com.start.head.bean.Fruit;
 
 import java.util.List;
@@ -32,7 +34,18 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder> 
             context=parent.getContext();
         }
         View view=LayoutInflater.from(parent.getContext()).inflate(R.layout.fruit_item_layout,parent,false);
-        return new ViewHolder(view);
+        final ViewHolder holder=new ViewHolder(view);
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fruit fruit=list.get(holder.getAdapterPosition());
+                Intent intent=new Intent(context,FruitActivity.class);
+                intent.putExtra(FruitActivity.FRUIT_NAME,fruit.getName());
+                intent.putExtra(FruitActivity.FRUIT_IMAGE_ID,fruit.getTypeId());
+                context.startActivity(intent);
+            }
+        });
+        return holder;
     }
 
     @Override
