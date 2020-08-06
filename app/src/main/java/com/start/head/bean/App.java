@@ -1,6 +1,8 @@
 package com.start.head.bean;
 
-public class App {
+
+
+public class App  {
     private String id,name,version;
 
     public String getId() {

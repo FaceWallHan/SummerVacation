@@ -1,5 +1,12 @@
 package com.start.head.net;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.widget.Toast;
+
+import com.start.head.AppClient;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -22,8 +29,17 @@ public class HttpUtil {
                 .build();
         client.newCall(request).enqueue(callback);
     }
+    public static boolean isNetworkAvailable(){
+        ConnectivityManager connectivityManager= (ConnectivityManager) AppClient.getContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo=connectivityManager.getActiveNetworkInfo();
+        return networkInfo != null && networkInfo.isAvailable();
+    }
     public static void sendHttpRequest(final String address, final HttpCallbackListener listener){
         //既然都要new，那么加上static又有什么意义呢？
+        if (!isNetworkAvailable()){
+            Toast.makeText(AppClient.getContext(), "network is unavailable", Toast.LENGTH_SHORT).show();
+            return;
+        }
         new Thread(new Runnable() {
             @Override
             public void run() {

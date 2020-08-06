@@ -15,10 +15,12 @@ import androidx.appcompat.widget.Toolbar;
 import com.bumptech.glide.Glide;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.start.head.R;
+import com.start.head.bean.Fruit;
 
 public class FruitActivity extends AppCompatActivity {
     public static final String FRUIT_NAME="fruit_name";
     public static final String FRUIT_IMAGE_ID="fruit_image_id";
+    public static final String FRUIT_DATA="fruit_data";
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,9 +28,10 @@ public class FruitActivity extends AppCompatActivity {
         inView();
     }
     private void inView(){
-        Intent intent=getIntent();
-        String fruitName=intent.getStringExtra(FRUIT_NAME);
-        int fruitImageId=intent.getIntExtra(FRUIT_IMAGE_ID,0);
+//        Fruit fruit= (Fruit) getIntent().getSerializableExtra(FRUIT_DATA);
+        Fruit fruit= (Fruit) getIntent().getParcelableExtra(FRUIT_DATA);
+        String fruitName=fruit.getName();
+        int fruitImageId=fruit.getTypeId();
         Toolbar toolbar=findViewById(R.id.toolbar);
         CollapsingToolbarLayout collapsing_toolbar=findViewById(R.id.collapsing_toolbar);
         ImageView fruit_image_view=findViewById(R.id.fruit_image_view);
@@ -36,7 +39,7 @@ public class FruitActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         ActionBar actionBar=getSupportActionBar();
         if (actionBar!=null){
-            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setDisplayHomeAsUpEnabled(true);//启用HomeAsUp按钮
         }
         collapsing_toolbar.setTitle(fruitName);
         Glide.with(this).load(fruitImageId).into(fruit_image_view);
