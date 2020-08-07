@@ -22,6 +22,9 @@ public class LongRunningService  extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+        new Thread(() ->{
+            //这就是lambda表达式？？？
+        }).start();
         new Thread(new Runnable() {
             @Override
             public void run() {

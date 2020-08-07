@@ -1,6 +1,7 @@
 package com.start.head.activity;
 
 import android.annotation.SuppressLint;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -154,5 +155,11 @@ public class MaterialDesignActivity extends AppCompatActivity {
                 });
             }
         }).start();
+    }
+
+    @Override
+    public void onConfigurationChanged(@NonNull Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        //在屏幕变化的时候进行相应的逻辑处理
     }
 }

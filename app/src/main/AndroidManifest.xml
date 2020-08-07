@@ -10,8 +10,9 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET"/>
-
+<!--resizeableActivity="false"禁用多窗口模式-->
     <application
+        android:resizeableActivity="false"
         android:name=".AppClient"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
